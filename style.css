@@ -1,0 +1,56 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: monospace;
+  height: 100vh;
+  font-size: 24px;
+  margin: 0;
+}
+
+#red {
+  accent-color: red;
+}
+
+#green {
+  accent-color: green;
+}
+
+#blue {
+  accent-color: blue;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+div + div {
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    padding: 2rem;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 2rem;
+  }
+}
+
+.colorHex {
+  margin: 0rem;
+}
+
+p {
+  margin-left: auto;
+}
